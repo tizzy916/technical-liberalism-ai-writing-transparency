@@ -1,10 +1,12 @@
-# 技术自由主义论文与 AI 写作透明度案例
+# 技艺自由主义论文与 AI 写作透明度案例
 
-本仓库公开展示《20 世纪 60 年代审美革命中的技术自由主义》的论文源稿、AI 辅助写作过程记录、版本修订日志与引文核查材料。
+本仓库公开展示《技艺自由主义：以 20 世纪 60 年代审美革命为枢纽重释技术自由主义》的论文源稿、AI 辅助写作过程记录、版本修订日志与引文核查材料。
 
 它不是一个“AI 帮我写完论文”的案例，而是一个相反的案例：在人文学科论文写作中，AI 应该如何被限制、审计、反复纠错，并最终服从作者的学术判断、文献责任和写作声音。
 
 我希望用这篇论文说明一件事：AI 辅助人文学科写作的关键，不是让 AI 生成更多文本，而是建立一套能让作者持续判断的工作系统。AI 可以检索、比较、质疑、重组、提醒风险，但它不能替代作者提出问题、承担立场、辨认概念张力和对引用负责。
+
+当前 `paper/chapters/` 中的论文文本，已由本地最终修改版 `技术自由主义_v9_20260528.docx` 转换并拆分为 Markdown。为避免二进制文件、Office 元数据和正式学位论文附件带来的公开边界问题，DOCX 文件本体不放入主分支。
 
 ## 这个仓库是什么
 
@@ -21,7 +23,7 @@
 
 这篇论文不是只用了一个聊天窗口完成的。它背后有两个配套开源 skill，用来把 AI 协作从“临时问答”变成可复用、可审计、可迭代的写作基础设施：
 
-- [claude-skill-academic-writer](https://github.com/tizzy916/claude-skill-academic-writer)：学术写作辅助 skill。它把人文学科论文写作拆成论证、结构、段落、句子四层审查，并用写作风格档案约束 AI 不要抹去作者声音。
+- [claude-skill-humanities-writing-companion](https://github.com/tizzy916/claude-skill-humanities-writing-companion)：人文学科写作辅助 skill。它把论文写作拆成论证、结构、段落、句子四层审查，并用写作风格档案约束 AI 不要抹去作者声音。
 - [scholar-wendao-skill](https://github.com/tizzy916/scholar-wendao-skill)：学者问道 skill。它用于把一位思想家的核心概念、论证方式和批评姿态蒸馏成 perspective skill，让 AI 可以作为内部审稿者而不是代写者参与论文修改。
 
 在本论文中，前者主要服务于写作过程管理、文风保护、分层审稿和修改日志；后者主要服务于阿伦特、朗西埃、芒福德、斯蒂格勒等思想家的视角蒸馏与魔鬼代言人审稿。
@@ -187,6 +189,7 @@
 - v6.0：答辩反馈整合。
 - v6.0.17：投稿终版。
 - 公开包：删除不适合公开的附件，修正已知幻觉引用，写明公开边界。
+- v9.0：以 `技术自由主义_v9_20260528.docx` 为最终修改来源，重新拆分为 GitHub 可读的 Markdown 章节。
 
 每一次重要修改都应该回答三个问题：
 
@@ -241,7 +244,7 @@
 
 - ChatGPT / Claude / Gemini 等通用大语言模型：适合讨论问题意识、模拟审稿、整理反对意见、做结构建议。
 - Codex / Claude Code 等本地或代码型 agent：适合整理文件、批量扫描、维护公开包、生成脚本、用 Git 发布。
-- 自定义 GPT / Claude Skill / Codex Skill：适合把“写作规则”固化为可复用工作手册。本项目对应的开源实现是 [claude-skill-academic-writer](https://github.com/tizzy916/claude-skill-academic-writer)。
+- 自定义 GPT / Claude Skill / Codex Skill：适合把“写作规则”固化为可复用工作手册。本项目对应的开源实现是 [claude-skill-humanities-writing-companion](https://github.com/tizzy916/claude-skill-humanities-writing-companion)。
 - Perspective skill：适合把某位思想家的概念边界、方法论倾向和批评姿态转化为内部审稿视角。本项目对应的开源实现是 [scholar-wendao-skill](https://github.com/tizzy916/scholar-wendao-skill)。
 
 ### 核查与审计
@@ -309,15 +312,16 @@ AI 辅助人文学科论文写作，最重要的不是“提高效率”，而�
 
 ## 读取顺序
 
-1. `paper/chapters/00_摘要.md`
-2. `paper/chapters/00_导言.md`
-3. `paper/chapters/01_信息何以自由.md`
-4. `paper/chapters/02_审美革命中的技术问题.md`
-5. `paper/chapters/03_技艺的分裂与重逢.md`
-6. `paper/chapters/04_技艺自由主义.md`
-7. `paper/chapters/05_选择走出去.md`
-8. `paper/chapters/06_参考文献.md`
-9. `paper/chapters/07_后记.md`
+1. `paper/chapters/00_前置.md`
+2. `paper/chapters/00_摘要.md`
+3. `paper/chapters/01_技术自由主义的当代危机.md`
+4. `paper/chapters/02_信息何以自由.md`
+5. `paper/chapters/03_审美革命及其技术问题.md`
+6. `paper/chapters/04_技艺的分裂与重逢.md`
+7. `paper/chapters/05_技艺自由主义.md`
+8. `paper/chapters/06_结语_选择走出去.md`
+9. `paper/chapters/07_参考文献.md`
+10. `paper/chapters/08_后记与声明.md`
 
 ## 相关过程材料
 

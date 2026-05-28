@@ -36,7 +36,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PAPER_DIR = HERE.parent
-CHAPTERS_DIR = PAPER_DIR / "chapters"
+CHAPTERS_DIR = PAPER_DIR / "paper" / "chapters"
 REFERENCE_DOCX = HERE / "reference.docx"
 DEFAULT_OUTPUT = PAPER_DIR / "_deliverables" / "word_exports" / "current" / "技术自由主义_latest_提交版.docx"
 
@@ -176,18 +176,18 @@ SEQUENCE = [
     {"kind": "render", "file": "00_摘要.md", "h1": "摘　要",                "sectpr_from": 3},  # 中文摘要
     {"kind": "render", "file": "00_摘要.md", "h1": "Abstract",              "sectpr_from": 4},  # 英文摘要
     {"kind": "keep",   "sectpr_from": 5},                                                    # 目录（提交前在 Word 里"更新域"）
-    {"kind": "render", "file": "00_导言.md",                                "sectpr_from": 6},  # 导言
-    {"kind": "render", "file": "01_信息何以自由.md",                          "sectpr_from": 7},  # 第1章
-    {"kind": "render", "file": "02_审美革命中的技术问题.md",                  "sectpr_from": 8},  # 第2章
-    {"kind": "render", "file": "03_技艺的分裂与重逢.md",                       "sectpr_from": 9},  # 第3章
-    {"kind": "render", "file": "04_技艺自由主义.md",                          "sectpr_from": 10}, # 第4章
-    {"kind": "render", "file": "05_选择走出去.md",                            "sectpr_from": 11}, # 第5章
-    {"kind": "render", "file": "06_参考文献.md",                              "sectpr_from": 12}, # 参考文献
-    {"kind": "render", "file": "07_后记.md", "h1": "致　谢",                "sectpr_from": 13},
-    {"kind": "render", "file": "07_后记.md", "h1": "声　明",                "sectpr_from": 14},
-    {"kind": "render", "file": "07_后记.md", "h1": "个人简历、在学期间完成的相关学术成果", "sectpr_from": 15},
-    {"kind": "render", "file": "07_后记.md", "h1": "指导小组评语",          "sectpr_from": 16},
-    {"kind": "render", "file": "07_后记.md", "h1": "答辩委员会决议书",      "sectpr_from": 17},
+    {"kind": "render", "file": "01_技术自由主义的当代危机.md",                "sectpr_from": 6},  # 第1章
+    {"kind": "render", "file": "02_信息何以自由.md",                          "sectpr_from": 7},  # 第2章
+    {"kind": "render", "file": "03_审美革命及其技术问题.md",                  "sectpr_from": 8},  # 第3章
+    {"kind": "render", "file": "04_技艺的分裂与重逢.md",                       "sectpr_from": 9},  # 第4章
+    {"kind": "render", "file": "05_技艺自由主义.md",                          "sectpr_from": 10}, # 第5章
+    {"kind": "render", "file": "06_结语_选择走出去.md",                       "sectpr_from": 11}, # 第6章
+    {"kind": "render", "file": "07_参考文献.md",                              "sectpr_from": 12}, # 参考文献
+    {"kind": "render", "file": "08_后记与声明.md", "h1": "致　谢",          "sectpr_from": 13},
+    {"kind": "render", "file": "08_后记与声明.md", "h1": "声　明",          "sectpr_from": 14},
+    {"kind": "render", "file": "08_后记与声明.md", "h1": "个人简历、在学期间完成的相关学术成果", "sectpr_from": 15},
+    {"kind": "render", "file": "08_后记与声明.md", "h1": "指导小组评语",    "sectpr_from": 16},
+    {"kind": "render", "file": "08_后记与声明.md", "h1": "答辩委员会决议书", "sectpr_from": 17},
 ]
 
 

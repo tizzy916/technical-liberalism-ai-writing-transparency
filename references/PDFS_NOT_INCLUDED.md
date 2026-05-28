@@ -6,5 +6,4 @@
 - GitHub 公开仓库不适合作为第三方全文资料的再分发渠道。
 - 公开透明的重点是论文源稿、AI 协作过程、引用核查方法和修订记录，而不是复制文献全文。
 
-如需复核引用，请依据 `paper/chapters/06_参考文献.md` 和 `references/citation-audit/` 中的报告，到合法渠道获取原文。
-
+如需复核引用，请依据 `paper/chapters/07_参考文献.md` 和 `references/citation-audit/` 中的报告，到合法渠道获取原文。

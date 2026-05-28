@@ -29,25 +29,25 @@ import subprocess
 import sys
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent          # _export/
-PAPER_DIR = HERE.parent                         # 技术自由主义/
-CHAPTERS_DIR = PAPER_DIR / "chapters"
+HERE = Path(__file__).resolve().parent
+PAPER_DIR = HERE.parent
+CHAPTERS_DIR = PAPER_DIR / "paper" / "chapters"
 REFERENCE_DOCX = HERE / "reference.docx"
 DEFAULT_OUTPUT = PAPER_DIR / "_deliverables" / "word_exports" / "current" / "技术自由主义_latest_快速预览.docx"
 MERGED_MD = HERE / "_merged.md"
 
 # 章节顺序（与 chapters/ 中的文件名严格对应）
 CHAPTER_ORDER = [
-    "00_前置.md",      # 封面 / 评阅人
-    "00_摘要.md",      # 摘要 + Abstract
-    "00_导言.md",      # 导言
-    "01_信息何以自由.md",
-    "02_审美革命中的技术问题.md",
-    "03_技艺的分裂与重逢.md",
-    "04_技艺自由主义.md",
-    "05_选择走出去.md",
-    "06_参考文献.md",
-    "07_后记.md",      # 致谢/声明/个人简历/评语/决议书
+    "00_前置.md",
+    "00_摘要.md",
+    "01_技术自由主义的当代危机.md",
+    "02_信息何以自由.md",
+    "03_审美革命及其技术问题.md",
+    "04_技艺的分裂与重逢.md",
+    "05_技艺自由主义.md",
+    "06_结语_选择走出去.md",
+    "07_参考文献.md",
+    "08_后记与声明.md",
 ]
 
 
